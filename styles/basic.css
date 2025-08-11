@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 1920px;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1422px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    white-space: unset;
+    margin: 0;
+    padding: 0;
+}
+
