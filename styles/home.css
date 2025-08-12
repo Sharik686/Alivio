@@ -1,16 +1,17 @@
+.main {
+}
 .home {
     width: 100%;
-    height: 895px;
-    background: url('../assets/background.webp');
-    background-size: cover;
-    position: relative;
+    height: 890px;
+    background: url('../assets/background.webp') center/cover no-repeat;
 }
-.home__wrapper {
-    width: 420px;
-    height: 100vh;
-    position: absolute;
-    top: 180px;
-    left: 275px;
+.home__content {
+    padding: 180px 0 0 0;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 .home__title {
     font-size: 65px;
@@ -25,4 +26,29 @@
     margin: 0 0 44px 0;
 }
 .btn-home {
+    width: 227px;
+    height: 65px;
+}
+
+@media (max-width: 768px) {
+    .home {
+    height: 700px;
+    }
+    .home__content {
+    padding: 80px 0 0 0;
+}
+
+@media (max-width: 480px) {
+    .home__title {
+    font-size: 50px;
+    max-width: 320px;
+    }
+    .home__description {
+        max-width: 320px;
+    }
+    .home {
+    background: 
+    linear-gradient(180deg, rgba(245, 246,252, 0.52), rgba(255, 176, 139, 0.28)),
+    url('../assets/background.webp') 70% 50%/cover no-repeat;
+}
 }
